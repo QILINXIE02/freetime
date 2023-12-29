@@ -1,0 +1,50 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #c1ecc1; /* Light green background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.timer-container {
+  text-align: center;
+}
+
+#timer {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #ff66b2; /* Pink text color */
+}
+
+.breathing-waves {
+  width: 300px;
+  height: 300px;
+  background: url('mindfulness.jpg') repeat-x;
+  margin: 20px auto;
+  animation: breathe 4s infinite linear;
+}
+
+@keyframes breathe {
+  0%, 100% {
+      background-position: 0 0;
+  }
+  50% {
+      background-position: 100% 0;
+  }
+}
+
+#startButton {
+  background-color: #8CC084;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+#startButton:hover {
+  background-color: #6A9D76;
+}
